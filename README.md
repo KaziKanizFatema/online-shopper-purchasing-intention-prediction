@@ -69,7 +69,17 @@ The **Tuned Random Forest** achieved the best overall performance.
 
 ## 📈 Model Comparison
 
-*(We'll add the comparison table in the next step.)*
+
+| Model | Accuracy | Precision | Recall | F1-score | ROC-AUC |
+|-------|---------:|----------:|--------:|---------:|---------:|
+| Logistic Regression | 88.12% | 74.32% | 35.60% | 48.14% | 88.72% |
+| Balanced Logistic Regression | 85.00% | 51.07% | 74.87% | 60.72% | 89.62% |
+| Decision Tree | 86.46% | 56.45% | 54.97% | 55.70% | 73.60% |
+| Random Forest | 89.78% | 73.21% | 53.66% | 61.93% | 91.79% |
+| Tuned Random Forest | **90.15%** | **74.91%** | **54.71%** | **63.24%** | **92.08%** |
+| K-Nearest Neighbours | 88.44% | 70.12% | 44.24% | 54.25% | 87.36% |
+| Support Vector Machine | 86.86% | 63.68% | 35.34% | 45.45% | 77.25% |
+| Gaussian Naive Bayes | 67.64% | 29.77% | 80.10% | 43.40% | 79.74% |
 
 ---
 
