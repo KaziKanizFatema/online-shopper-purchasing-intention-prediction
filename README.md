@@ -2,47 +2,45 @@
 
 ## 📌 Project Overview
 
-This project predicts whether an online visitor will purchase a product based on browsing behaviour. Multiple machine learning models were developed, compared, and evaluated to identify the best-performing classifier. Model interpretability was also performed using SHAP (SHapley Additive exPlanations).
+This project predicts whether an online visitor will complete a purchase based on their browsing behaviour. Multiple machine learning classification algorithms were implemented, evaluated, and compared to identify the best-performing model. The final model was further interpreted using SHAP (SHapley Additive exPlanations) to provide explainable AI insights.
 
 ---
 
 ## 🎯 Objectives
 
-- Predict customer purchase intention
-- Compare multiple machine learning algorithms
-- Improve performance through hyperparameter tuning
-- Explain model predictions using SHAP
-- Identify the most influential customer behaviour features
+- Predict online customer purchase intention.
+- Compare multiple machine learning algorithms.
+- Improve model performance through hyperparameter tuning.
+- Interpret model predictions using SHAP.
+- Identify the most influential features affecting customer purchases.
 
 ---
 
 ## 📊 Dataset
 
-Dataset: Online Shoppers Purchasing Intention Dataset
+**Dataset:** Online Shoppers Purchasing Intention Dataset
 
-Features include:
+**Target Variable**
 
-- Administrative pages
-- Product-related pages
-- Bounce Rate
-- Exit Rate
-- Page Value
-- Traffic Type
-- Visitor Type
+- Revenue
+  - True = Purchase
+  - False = No Purchase
+
+**Key Features**
+
+- Administrative
+- Informational
+- ProductRelated
+- BounceRates
+- ExitRates
+- PageValues
+- VisitorType
 - Month
 - Weekend
-
-Target variable:
-
-Revenue
-- 0 = No Purchase
-- 1 = Purchase
 
 ---
 
 ## 🤖 Machine Learning Models
-
-The following models were implemented:
 
 - Logistic Regression
 - Balanced Logistic Regression
@@ -55,43 +53,59 @@ The following models were implemented:
 
 ---
 
-## ⚙️ Hyperparameter Tuning
+## 🏆 Best Model
 
-Random Forest was optimized using GridSearchCV to improve predictive performance.
+The **Tuned Random Forest** achieved the best overall performance.
 
----
-
-## 📈 Model Performance
-
-The Tuned Random Forest achieved the best performance.
-
-Evaluation metrics included:
-
-- Accuracy
-- Precision
-- Recall
-- F1-score
-- ROC-AUC
+| Metric | Score |
+|--------|------:|
+| Accuracy | 90.15% |
+| Precision | 74.91% |
+| Recall | 54.71% |
+| F1-score | 63.24% |
+| ROC-AUC | 92.08% |
 
 ---
 
-## 🔍 Explainable AI (SHAP)
+## 📈 Model Comparison
 
-SHAP was used to explain model predictions.
-
-Visualisations include:
-
-- SHAP Summary Plot
-- SHAP Waterfall Plot
-- Feature Importance
-
-Key finding:
-
-PageValues was the most influential feature affecting purchase prediction.
+*(We'll add the comparison table in the next step.)*
 
 ---
 
-## 🛠 Technologies
+## 🔥 Visualisations
+
+### ROC Curve
+
+![ROC Curve](images/roc_curve.png)
+
+---
+
+### Correlation Heatmap
+
+![Correlation Heatmap](images/correlation_heatmap.png)
+
+---
+
+### Feature Importance
+
+![Feature Importance](images/feature_importance.png)
+
+---
+
+### SHAP Summary Plot
+
+![SHAP Summary](images/shap_summary_plot.png)
+
+---
+
+### SHAP Waterfall Plot
+
+![SHAP Waterfall](images/shap_waterfall.png)
+
+---
+
+## 🛠 Technologies Used
 
 - Python
 - Pandas
@@ -103,20 +117,18 @@ PageValues was the most influential feature affecting purchase prediction.
 
 ---
 
-## 📂 Repository Structure
+## 🚀 Future Improvements
 
-```
-Online_Shopper_Purchase_Prediction.ipynb
-online_shoppers_intention.csv
-LICENSE
-README.md
-```
+- Evaluate XGBoost and LightGBM models.
+- Deploy the model using Streamlit or Flask.
+- Perform cross-validation and threshold optimization.
+- Build a real-time customer purchase prediction dashboard.
 
 ---
 
 ## 👩‍💻 Author
 
-Kazi Kaniz Fatema
+**Kazi Kaniz Fatema**
 
 GitHub:
 https://github.com/KaziKanizFatema
